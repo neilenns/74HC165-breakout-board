@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name 74HC165-breakout-board)(type KiCad)(uri ${KIPRJMOD}/74HC165-breakout-board.pretty)(options "")(descr ""))
+)
