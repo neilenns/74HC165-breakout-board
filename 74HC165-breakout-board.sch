@@ -1,0 +1,280 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date "%%date%%"
+Rev "%%version%%"
+Comp ""
+Comment1 ""
+Comment2 "neile@live.com"
+Comment3 "Neil Enns"
+Comment4 "74HC165 breakout board"
+$EndDescr
+$Sheet
+S 1700 900  600  400 
+U 61DCCBDC
+F0 "74HC165" 50
+F1 "74HC165.sch" 50
+F2 "SH" I L 1700 1200 50 
+F3 "CLK" I L 1700 1100 50 
+F4 "SER" I L 1700 1000 50 
+F5 "QH" O R 2300 1000 50 
+$EndSheet
+Wire Wire Line
+	1300 1100 1600 1100
+Wire Wire Line
+	1300 1200 1650 1200
+$Comp
+L power:+5V #PWR01
+U 1 1 61DD970E
+P 1300 700
+F 0 "#PWR01" H 1300 550 50  0001 C CNN
+F 1 "+5V" H 1315 873 50  0000 C CNN
+F 2 "" H 1300 700 50  0001 C CNN
+F 3 "" H 1300 700 50  0001 C CNN
+	1    1300 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 61DD9981
+P 1300 1500
+F 0 "#PWR04" H 1300 1250 50  0001 C CNN
+F 1 "GND" H 1305 1327 50  0000 C CNN
+F 2 "" H 1300 1500 50  0001 C CNN
+F 3 "" H 1300 1500 50  0001 C CNN
+	1    1300 1500
+	1    0    0    -1  
+$EndComp
+Text Label 1300 1100 0    50   ~ 0
+CLOCK
+Text Label 1300 1200 0    50   ~ 0
+LATCH
+$Sheet
+S 2700 900  600  400 
+U 61DDC172
+F0 "sheet61DDC16C" 50
+F1 "74HC165.sch" 50
+F2 "SH" I L 2700 1200 50 
+F3 "CLK" I L 2700 1100 50 
+F4 "SER" I L 2700 1000 50 
+F5 "QH" O R 3300 1000 50 
+$EndSheet
+Wire Wire Line
+	2300 1000 2700 1000
+$Sheet
+S 3700 900  600  400 
+U 61DDC3C8
+F0 "sheet61DDC3C2" 50
+F1 "74HC165.sch" 50
+F2 "SH" I L 3700 1200 50 
+F3 "CLK" I L 3700 1100 50 
+F4 "SER" I L 3700 1000 50 
+F5 "QH" O R 4300 1000 50 
+$EndSheet
+Wire Wire Line
+	3300 1000 3700 1000
+$Sheet
+S 4700 900  600  400 
+U 61DDC5F2
+F0 "sheet61DDC5EC" 50
+F1 "74HC165.sch" 50
+F2 "SH" I L 4700 1200 50 
+F3 "CLK" I L 4700 1100 50 
+F4 "SER" I L 4700 1000 50 
+F5 "QH" O R 5300 1000 50 
+$EndSheet
+Wire Wire Line
+	4300 1000 4700 1000
+Wire Wire Line
+	1650 1200 1650 1450
+Wire Wire Line
+	1650 1450 2650 1450
+Wire Wire Line
+	2650 1450 2650 1200
+Wire Wire Line
+	2650 1200 2700 1200
+Connection ~ 1650 1200
+Wire Wire Line
+	1650 1200 1700 1200
+Wire Wire Line
+	2650 1450 3650 1450
+Wire Wire Line
+	3650 1450 3650 1200
+Wire Wire Line
+	3650 1200 3700 1200
+Connection ~ 2650 1450
+Wire Wire Line
+	3650 1450 4650 1450
+Wire Wire Line
+	4650 1450 4650 1200
+Wire Wire Line
+	4650 1200 4700 1200
+Connection ~ 3650 1450
+Wire Wire Line
+	1600 1100 1600 1500
+Wire Wire Line
+	1600 1500 2600 1500
+Wire Wire Line
+	2600 1500 2600 1100
+Wire Wire Line
+	2600 1100 2700 1100
+Connection ~ 1600 1100
+Wire Wire Line
+	1600 1100 1700 1100
+Wire Wire Line
+	2600 1500 3600 1500
+Wire Wire Line
+	3600 1500 3600 1100
+Wire Wire Line
+	3600 1100 3700 1100
+Connection ~ 2600 1500
+Wire Wire Line
+	3600 1500 4600 1500
+Wire Wire Line
+	4600 1500 4600 1100
+Wire Wire Line
+	4600 1100 4700 1100
+Connection ~ 3600 1500
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 61DDF5C9
+P 5950 1100
+F 0 "J2" H 6030 1142 50  0000 L CNN
+F 1 "Conn_01x05" H 6030 1051 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 5950 1100 50  0001 C CNN
+F 3 "~" H 5950 1100 50  0001 C CNN
+	1    5950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 61DE0AC2
+P 5750 900
+F 0 "#PWR02" H 5750 750 50  0001 C CNN
+F 1 "+5V" H 5765 1073 50  0000 C CNN
+F 2 "" H 5750 900 50  0001 C CNN
+F 3 "" H 5750 900 50  0001 C CNN
+	1    5750 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 61DE0CBC
+P 5750 1300
+F 0 "#PWR03" H 5750 1050 50  0001 C CNN
+F 1 "GND" H 5755 1127 50  0000 C CNN
+F 2 "" H 5750 1300 50  0001 C CNN
+F 3 "" H 5750 1300 50  0001 C CNN
+	1    5750 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1500 5600 1500
+Connection ~ 4600 1500
+Connection ~ 4650 1450
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61DE2F11
+P 1300 700
+F 0 "#FLG0101" H 1300 775 50  0001 C CNN
+F 1 "PWR_FLAG" V 1300 827 50  0000 L CNN
+F 2 "" H 1300 700 50  0001 C CNN
+F 3 "~" H 1300 700 50  0001 C CNN
+	1    1300 700 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1300 700 
+Text Label 5550 1000 2    50   ~ 0
+DATA
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61DE455D
+P 1300 1500
+F 0 "#FLG0102" H 1300 1575 50  0001 C CNN
+F 1 "PWR_FLAG" V 1300 1627 50  0000 L CNN
+F 2 "" H 1300 1500 50  0001 C CNN
+F 3 "~" H 1300 1500 50  0001 C CNN
+	1    1300 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 1500 1300 1300
+Connection ~ 1300 1500
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61DD1A11
+P 1500 2050
+F 0 "H1" H 1600 2096 50  0000 L CNN
+F 1 "MountingHole" H 1600 2005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1500 2050 50  0001 C CNN
+F 3 "~" H 1500 2050 50  0001 C CNN
+	1    1500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61DD1C43
+P 1500 2300
+F 0 "H2" H 1600 2346 50  0000 L CNN
+F 1 "MountingHole" H 1600 2255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1500 2300 50  0001 C CNN
+F 3 "~" H 1500 2300 50  0001 C CNN
+	1    1500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61DD1DC1
+P 1500 2550
+F 0 "H3" H 1600 2596 50  0000 L CNN
+F 1 "MountingHole" H 1600 2505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1500 2550 50  0001 C CNN
+F 3 "~" H 1500 2550 50  0001 C CNN
+	1    1500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61DD206B
+P 1500 2800
+F 0 "H4" H 1600 2846 50  0000 L CNN
+F 1 "MountingHole" H 1600 2755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1500 2800 50  0001 C CNN
+F 3 "~" H 1500 2800 50  0001 C CNN
+	1    1500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1000 5750 1000
+Wire Wire Line
+	5650 1450 5650 1200
+Wire Wire Line
+	5650 1200 5750 1200
+Wire Wire Line
+	4650 1450 5650 1450
+Wire Wire Line
+	5600 1500 5600 1100
+Wire Wire Line
+	5600 1100 5750 1100
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 61DDFAED
+P 1100 1100
+F 0 "J1" H 1200 1200 50  0000 C CNN
+F 1 "Conn_01x05" H 1400 1100 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 1100 1100 50  0001 C CNN
+F 3 "~" H 1100 1100 50  0001 C CNN
+	1    1100 1100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1000 1700 1000
+Text Label 1300 1000 0    50   ~ 0
+SER
+Wire Wire Line
+	1300 700  1300 900 
+$EndSCHEMATC
