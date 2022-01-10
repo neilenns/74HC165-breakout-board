@@ -38,6 +38,7 @@ preflight:
 global:
   # Sets the default output filename for all generated files. You likely don't have to change this.
   output: "%f-%i.%x"
+  date_reformat: false
 
 filters:
   - name: "exclude_any"
