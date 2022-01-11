@@ -53,34 +53,28 @@ outputs:
     options:
       blacklist: "DNF*"
 
-  - name: pcb_top_g
-    comment: "Renders - top (green)"
+  - name: pcb_top_b
+    comment: "Renders - top (blue)"
     type: pcbdraw
     dir: "Renders"
     options:
-      output: "%f-green-%i.%x"
+      output: "%f-blue-%i.%x"
       format: jpg
       show_components: none
       dpi: 600
+      style: set-blue-enig
 
-  - name: pcb_bot_g
-    comment: "Renders - bottom (green)"
+  - name: pcb_bot_b
+    comment: "Renders - bottom (blue)"
     type: pcbdraw
     dir: "Renders"
     options:
-      output: "%f-green-%i.%x"
+      output: "%f-blue-%i.%x"
       format: jpg
       bottom: True
       show_components: none
       dpi: 600
-
-  - name: step
-    comment: "Renders - 3D model (STEP)"
-    type: step
-    dir: "Renders"
-    options:
-      metric_units: true
-      origin: 85,66.2
+      style: set-blue-enig
 
   - name: render_3d_top
     comment: "Renders - 3D model - top (PNG)"
@@ -91,6 +85,7 @@ outputs:
       zoom: 4
       width: 2048
       ray_tracing: true
+      solder_mask: '#0000FF'
 
   - name: render_3d_bottom
     comment: "Renders - 3D model - bottom (PNG)"
@@ -101,3 +96,4 @@ outputs:
       zoom: 4
       width: 2048
       ray_tracing: true
+      solder_mask: '#0000FF'
