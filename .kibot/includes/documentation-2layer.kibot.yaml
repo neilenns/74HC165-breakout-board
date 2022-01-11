@@ -81,3 +81,23 @@ outputs:
     options:
       metric_units: true
       origin: 85,66.2
+
+  - name: render_3d_top
+    comment: "Renders - 3D model - top (PNG)"
+    type: render_3d
+    dir: "Renders"
+    options:
+      view: top
+      zoom: 4
+      width: 2048
+      ray_tracing: true
+
+  - name: render_3d_bottom
+    comment: "Renders - 3D model - bottom (PNG)"
+    type: render_3d
+    dir: "Renders"
+    options:
+      view: bottom
+      zoom: 4
+      width: 2048
+      ray_tracing: true
