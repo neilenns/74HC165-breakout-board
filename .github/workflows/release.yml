@@ -158,6 +158,7 @@ jobs:
             ${{ github.event.repository.name }}-Documentation.zip
             ${{ github.event.repository.name }}-JLCPCB.zip
             ${{ env.OutputFolder }}/PCBWay/${{ github.event.repository.name }}-PCBWay.zip
+            ORDERING.md
 
       # Archive all the artifacts from output and attach to the action's results.
       # This is so they're made available when this workflow is run manually from the
