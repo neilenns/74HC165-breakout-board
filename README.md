@@ -4,6 +4,8 @@ This PCB provides access to the inputs of four serially connected 74HC165s. It's
 of inputs available on smaller Arduinos like the Pro Micro or Nano when building flight simulator components
 that interact with [MobiFlight](http://www.mobiflight.com).
 
+<img width="387" alt="74HC165-breakout-board-3D_top" src="https://user-images.githubusercontent.com/9524118/149179155-ca797681-2795-42c5-962d-626a3d5bfaf4.png">
+
 ## Ordering from JLCPCB
 
 These boards are ready to order from JLCPCB with their SMT fabrication service. You'll receive boards with all
@@ -11,7 +13,7 @@ the components soldered on except for the pin headers which you add yourself.
 
 ### Setting up the PCB details
 
-1. Download the latest JLCPCB submission files and unpack the zip file. You will wind up with three files:
+1. Download and unpack `74HC165-breakout-board-JLCPCB.zip` from [the latest release](https://github.com/neilenns/74HC165-breakout-board/releases/latest). You will wind up with three files:
 
    - `74HC165-breakout-board-JLCPCB.zip`
    - `74HC165-breakout-board_bom_jlc.csv`
